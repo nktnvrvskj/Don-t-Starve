@@ -28,6 +28,6 @@ function gameLoop() {
 }
 
 // Запускаем игру
-gameLoop();
+//gameLoop();
 
 helloCore();
