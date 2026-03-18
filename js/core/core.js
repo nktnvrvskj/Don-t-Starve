@@ -15,4 +15,5 @@ function hello(){
 function bye(){
     console.log("Bye from Core!");
 }
+hello()
 
