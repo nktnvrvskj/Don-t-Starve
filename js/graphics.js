@@ -6,6 +6,7 @@ function helloGraphics() {
         console.log("Assets & Graphics ready 🖼️");
     }
 }
+
 // Функция для рисования ствола дерева
 window.drawTreeTrunk = function(ctx, x, y) {
     // TODO: Коричневый прямоугольник 10x40
@@ -23,7 +24,6 @@ window.drawTreeTop = function(ctx, x, y) {
     ctx.arc(x, y - 30, 15, 0, Math.PI * 2);
     ctx.fill();
 }
-
 window.drawTreeSides = function(ctx, x, y) {
     ctx.fillStyle = 'green';
     
