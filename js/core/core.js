@@ -19,23 +19,22 @@ window.startGameLoop = function() {
 window.updateGame = function(deltaTime) {
     console.log("🔄 Game update: " + deltaTime);
 };
-=======
 
-
-
-window.helloCore = function() {
-    hello();
-    bye();
+function helloCore() {
+    console.log("⚙️ Core Mechanics ready");
+    return { status: "ready", module: "core" };
 }
 
-function hello(){
-    console.log("Hello from Core!");
-}
+// Функция для игрового цикла (заглушка)
+window.startGameLoop = function() {
+    console.log("🎮 Game loop initialized");
+    return true;
+};
 
-function bye(){
-    console.log("Bye from Core!");
-}
-hello()
+// Функция для обновления игрового состояния
+window.updateGame = function(deltaTime) {
+    console.log("🔄 Game update: " + deltaTime);
+};
 
 // Функция для рисования полного игрока
 window.drawPlayer = function(ctx, x, y) {
@@ -57,4 +56,15 @@ window.drawPlayerEyes = function(ctx, x, y) {
     // 👇 Твой код здесь
     
 }
-develop
+
+
+
+// Функция для рисования тела игрока (жёлтый круг)
+window.drawPlayerBody = function(ctx, x, y) {
+    // TODO: Жёлтый круг радиусом 15 в точке (x, y)
+    // Используй: fillStyle = 'yellow', beginPath, arc, fill
+    // 👇 Твой код здесь
+  console.log("Работает")
+
+}
+
