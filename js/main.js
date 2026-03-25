@@ -26,6 +26,8 @@ function gameLoop() {
     
     requestAnimationFrame(gameLoop);
 }
-
+window.AssetLoader.registerImage('player', 'assets/images/player.png');
+window.AssetLoader.registerImage('tree', 'assets/images/tree.png');
+window.AssetLoader.onComplete = () => console.log('Ready to render!');
 // Запускаем игру
 gameLoop();
