@@ -207,7 +207,7 @@ window.CoreGame = {
     },
     
     // Атака врага
-    aattack: function() {
+    attack: function() {
     if(!GameState.gameActive) return;
     
     const nearest = GameAI.findNearestEnemy(
