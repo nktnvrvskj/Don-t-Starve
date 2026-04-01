@@ -225,7 +225,6 @@ window.CoreGame = {
     }
 }
         
-        
         if(nearest) {
             const enemyId = nearest.id;
             const defeated = GameAI.damageEnemy(enemyId, GameBalance.PLAYER_DAMAGE);
