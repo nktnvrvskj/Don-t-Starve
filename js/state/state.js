@@ -154,7 +154,11 @@ window.GameState = {
             SoundManager.play('day_change');
         }
         console.log(`🌞 Day ${this.day}`);
+
+    },
+
 },
+
     
     // Удаление дерева
     removeTree: function(index) {
